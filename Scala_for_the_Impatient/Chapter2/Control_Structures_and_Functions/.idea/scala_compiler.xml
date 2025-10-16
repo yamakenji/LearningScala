@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="Control_Structures_and_Functions,Control_Structures_and_Functions.main,Control_Structures_and_Functions.test" />
+  </component>
+</project>
