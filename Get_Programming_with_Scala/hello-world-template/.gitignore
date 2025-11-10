@@ -1,0 +1,67 @@
+# Scala and SBT
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# SBT specific
+target/
+project/target/
+project/project/
+project/plugins/project/
+
+# IDE specific files
+.idea/
+*.iml
+*.iws
+.vscode/
+.metals/
+.bloop/
+
+# Scala worksheets
+*.sc
+
+# REPL history
+.scala_repl_history
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Dependency directories
+lib_managed/
+src_managed/
+
+# Ensime specific
+.ensime
+.ensime_cache/
+
+# Metals specific
+metals.sbt
+.bsp/
+
+# Cache directories
+.cache/
+.history/
+.lib/
