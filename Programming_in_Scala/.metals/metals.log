@@ -1,0 +1,58 @@
+2026.06.18 13:48:45 INFO  Started: Metals version 1.6.7 in folders '/home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala' for client Zed 1.6.3+stable.306.601ecb3ee5c16940191818ee7f244837abf6983c.[0m
+2026.06.18 13:48:45 INFO  Memory monitor started[0m
+2026.06.18 13:48:47 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2026.06.18 13:48:47 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.06.18 13:48:48 INFO  Attempting to connect to the build server...[0m
+2026.06.18 13:48:48 INFO  No running Bloop server found, starting one.[0m
+2026.06.18 13:48:48 ERROR Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/home/yamaken/.sdkman/candidates/java/current/lib/security/cacerts -Djavax.net.ssl.trustStorePassword=changeit[0m
+2026.06.18 13:48:51 INFO  Starting compilation server[0m
+2026.06.18 13:48:52 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.06.18 13:48:53 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.06.18 13:48:53 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter3/src/main/scala/chapter3.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.7[0m
+Jun 18, 2026 1:48:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2026.06.18 13:48:53 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter3/src/main/scala/chapter3.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.06.18 13:48:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/.metals/bsp.trace.json or /home/yamaken/.cache/metals/bsp.trace.json[0m
+2026.06.18 13:49:00 INFO  time: Connected to build server in 12s[0m
+2026.06.18 13:49:00 INFO  Connected to Build server: Bloop v2.0.19[0m
+2026.06.18 13:49:00 INFO  time: Imported build in 0.39s[0m
+2026.06.18 13:49:04 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2026.06.18 13:49:04 INFO  Selected port 5031[0m
+Jun 18, 2026 1:49:05 PM io.undertow.Undertow start
+INFO: starting server: Undertow - 2.3.12.Final
+Jun 18, 2026 1:49:05 PM org.xnio.Xnio <clinit>
+INFO: XNIO version 3.8.17.Final
+Jun 18, 2026 1:49:05 PM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.8.17.Final
+Jun 18, 2026 1:49:06 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 3.5.0.Final
+2026.06.18 13:49:06 INFO  Started Metals http server at http://127.0.0.1:5031[0m
+2026.06.18 13:49:08 INFO  time: indexed workspace in 8.1s[0m
+2026.06.18 13:49:08 WARN  no build target for: /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter3/src/main/scala/chapter3.worksheet.sc[0m
+java.lang.UnsupportedOperationException
+	at org.eclipse.lsp4j.services.LanguageClient.refreshCodeLenses(LanguageClient.java:203)
+	at scala.meta.internal.metals.clients.language.ConfiguredLanguageClient.refreshModel(ConfiguredLanguageClient.scala:196)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$23(Indexer.scala:229)
+	at scala.util.Success.foreach(Try.scala:268)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:514)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026.06.18 13:49:35 INFO  time: evaluated worksheet 'chapter3.worksheet.sc' in 26s[0m
+2026.06.18 13:49:35 ERROR Unexpected error initializing server: 
+java.lang.UnsupportedOperationException
+	at org.eclipse.lsp4j.services.LanguageClient.refreshSemanticTokens(LanguageClient.java:189)
+	at scala.meta.internal.metals.clients.language.ConfiguredLanguageClient.refreshSemanticTokens(ConfiguredLanguageClient.scala:208)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onWorksheetChanged$4(MetalsLspService.scala:1712)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+[0m
+2026.06.18 14:31:39 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/chapter2.worksheet.sc. Using presentation compiler with project's scala-library version: 3.8.4[0m
+2026.06.18 14:31:40 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/chapter2.worksheet.sc. Using presentation compiler with project's scala-library version: 3.8.4[0m
+2026.06.18 14:31:51 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/chapter2.worksheet.sc. Using presentation compiler with project's scala-library version: 3.8.4[0m
+2026.06.18 14:31:51 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/chapter2.worksheet.sc. Using presentation compiler with project's scala-library version: 3.8.4[0m
+2026.06.18 14:32:00 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/chapter2.worksheet.sc. Using presentation compiler with project's scala-library version: 3.8.4[0m
+2026.06.18 14:32:00 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/chapter2.worksheet.sc. Using presentation compiler with project's scala-library version: 3.8.4[0m
+2026.06.18 14:32:00 INFO  no build target found for /home/yamaken/projects/github.com/yamakenji/LearningScala/Programming_in_Scala/chapter2/src/main/scala/chapter2.worksheet.sc. Using presentation compiler with project's scala-library version: 3.8.4[0m
