@@ -1,5 +1,31 @@
 // Programming in Scala - Chapter 3: Next Steps in Scala
 
+val numbers = Array(1, 2, 3, 4, 5)
+numbers.foreach(println)
+numbers(0) = 100
+numbers.foreach(println)
+
+val numbersList = List(1, 2, 3, 4, 5)
+val doubled = numbersList.map(n => n * 2)
+
+println(numbersList)
+println(doubled)
+numbersList.foreach(println)
+doubled.foreach(println)
+
+// 演習Lv1
+val scores = Array(90, 80, 70, 60, 50)
+scores(1) = 95
+
+val names = Array("Alice", "Bob", "Charlie", "David", "Eve")
+val person = ("Kenji", 50, "Architect")
+
+scores.foreach(println)
+names.foreach(println)
+println(person)
+println(s"${person._1} is ${person._2} years old and works as a ${person._3}.")
+
+
 // --- Arrays ---
 val greetStrings = new Array[String](3)
 greetStrings(0) = "Hello"
