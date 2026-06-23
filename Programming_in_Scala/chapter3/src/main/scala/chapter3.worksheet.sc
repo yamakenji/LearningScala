@@ -1,5 +1,70 @@
 // Programming in Scala - Chapter 3: Next Steps in Scala
 
+val numbers = Array(1, 2, 3, 4, 5)
+numbers.foreach(println)
+numbers(0) = 100
+numbers.foreach(println)
+
+val numbersList = List(1, 2, 3, 4, 5)
+val doubled = numbersList.map(n => n * 2)
+
+println(numbersList)
+println(doubled)
+numbersList.foreach(println)
+doubled.foreach(println)
+
+// 演習Lv1
+val scores = Array(90, 80, 70, 60, 50)
+scores(1) = 95
+
+val names = Array("Alice", "Bob", "Charlie", "David", "Eve")
+val person = ("Kenji", 50, "Architect")
+
+scores.foreach(println)
+names.foreach(println)
+println(person)
+println(s"${person._1} is ${person._2} years old and works as a ${person._3}.")
+
+// 演習Lv2
+val prices = List(1000, 2500, 800, 1200)
+val withTax = prices.map(p => (p * 1.1).toInt)
+val expensive = withTax.filter(p => p > 1500)
+
+println(prices)
+println(withTax)
+println(expensive)
+
+// 演習Lv3
+val order = List(
+  ("O-001", "confirmed", 1200),
+  ("O-002", "draft", 3000),
+  ("O-003", "confirmed", 2500)
+)
+val confirmedAmounts = order.filter(o => o._2 == "confirmed")
+                            .map(_._3)
+
+val total = confirmedAmounts.sum
+
+// println(order)
+println(confirmedAmounts)
+println(s"total = $total")
+
+// 問題1
+val scoresP1 = List(90, 80, 70, 60, 50)
+val highScores = scoresP1.filter(s => s >= 60)
+println(highScores)
+
+// 問題2
+val pricesP2 = List(1000, 2500, 800, 1200)
+val withTaxP2 = pricesP2.map(p => (p * 1.1).toInt)
+println(withTaxP2)
+
+// 問題3
+val stock = Map("coffee" -> 10, "tea" -> 5, "juice" -> 0)
+println(stock("coffee"))
+val inStock = stock.filter((_, qty) => qty > 0).keys
+println(inStock)
+
 // --- Arrays ---
 val greetStrings = new Array[String](3)
 greetStrings(0) = "Hello"
